@@ -1,0 +1,2130 @@
+{
+    "$__mpe_config_刷体力": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787834246883,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\刷体力.json",
+            "savedViewport": {
+                "x": -2989,
+                "y": -777,
+                "zoom": 0.49
+            },
+            "filename": "刷体力",
+            "version": "v1.9.0"
+        }
+    },
+    "为红色减一次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    860,
+                    541,
+                    415,
+                    85
+                ],
+                "template": [
+                    "减少战斗次数图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始调整战斗次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8642,
+                "y": 1902
+            }
+        }
+    },
+    "主战员": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "主战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]主战员_第二次",
+            "开始选择具体关卡_主战员"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4229,
+                "y": 348
+            }
+        }
+    },
+    "主战员_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "主战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4506,
+                "y": 166
+            }
+        }
+    },
+    "判断是否位于配置任务界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    97,
+                    7,
+                    129,
+                    58
+                ],
+                "expected": [
+                    "配置队伍"
+                ]
+            }
+        },
+        "next": [
+            "已位于配置界面任务开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7020,
+                "y": 2105
+            }
+        }
+    },
+    "刷体力开始": {
+        "next": [
+            "进入模拟界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2646,
+                "y": 848
+            }
+        }
+    },
+    "副战员": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "副战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]副战员_第二次",
+            "开始选择具体关卡_副战员"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4281,
+                "y": 1098
+            }
+        }
+    },
+    "副战员_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "副战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4571,
+                "y": 995
+            }
+        }
+    },
+    "增加五次关卡挑战次数": {
+        "max_hit": 5,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    860,
+                    541,
+                    415,
+                    85
+                ],
+                "template": [
+                    "增加战斗次数图标.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8012,
+                "y": 1570
+            }
+        }
+    },
+    "已位于配置界面任务开始": {
+        "next": [
+            "开始调整战斗次数"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7376,
+                "y": 2087
+            }
+        }
+    },
+    "开始调整战斗次数": {
+        "post_delay": 1500,
+        "next": [
+            "[JumpBack]增加五次关卡挑战次数",
+            "消耗体力为红色嘛",
+            "[JumpBack]消耗体力不是红色开始战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7717,
+                "y": 2051
+            }
+        }
+    },
+    "开始选择具体关卡_主战员": {
+        "next": [
+            "选择晋级材料-前锋",
+            "选择晋级材料-守卫",
+            "选择晋级材料-游侠",
+            "选择晋级材料-猎人",
+            "选择晋级材料-奥义师",
+            "选择晋级材料-操控师",
+            "[JumpBack]滑动关卡列表"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4874,
+                "y": 403
+            }
+        }
+    },
+    "开始选择具体关卡_副战员": {
+        "next": [
+            "选择晋级材料-前锋",
+            "选择晋级材料-守卫",
+            "选择晋级材料-游侠",
+            "选择晋级材料-猎人",
+            "选择晋级材料-奥义师",
+            "选择晋级材料-操控师",
+            "[JumpBack]滑动关卡列表"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4861,
+                "y": 822
+            }
+        }
+    },
+    "开始选择具体关卡_成长": {
+        "next": [
+            "选择单元币关卡_成长",
+            "选择主战员升级材料关卡_成长",
+            "选择辅战员升级材料关卡_成长"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4674,
+                "y": -622
+            }
+        }
+    },
+    "开始选择具体关卡_潜能": {
+        "next": [
+            "选择潜能材料-热情",
+            "选择潜能材料-秩序",
+            "选择潜能材料-本能",
+            "选择潜能材料-虚无",
+            "选择潜能材料-正义",
+            "[JumpBack]滑动关卡列表"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5019,
+                "y": 1693
+            }
+        }
+    },
+    "开始选择具体关卡_记忆碎片": {
+        "next": [
+            "选择记忆碎片-进化与荆棘",
+            "选择记忆碎片-序曲与梦境",
+            "选择记忆碎片-欲望与主宰",
+            "选择记忆碎片-焰与宝珠",
+            "选择记忆碎片-地位与行踪",
+            "选择记忆碎片-光荣与权威",
+            "选择记忆碎片-循环与命运",
+            "选择记忆碎片-贪婪与执着",
+            "选择记忆碎片-金龟子与约定",
+            "选择记忆碎片-遗骸与工具",
+            "[JumpBack]滑动关卡列表"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4909,
+                "y": 1991
+            }
+        }
+    },
+    "开始选择刷什么类型关卡": {
+        "next": [
+            "成长",
+            "主战员",
+            "副战员",
+            "潜能",
+            "记忆碎片"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3693,
+                "y": 879
+            }
+        }
+    },
+    "成长": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "成长"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]成长_第二次",
+            "开始选择具体关卡_成长"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4134,
+                "y": -632
+            }
+        }
+    },
+    "成长_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "成长"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4451,
+                "y": -875
+            }
+        }
+    },
+    "消耗体力为红色嘛": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    1175,
+                    641,
+                    65,
+                    35
+                ],
+                "lower": [
+                    [
+                        193,
+                        72,
+                        95
+                    ]
+                ],
+                "upper": [
+                    [
+                        193,
+                        72,
+                        95
+                    ]
+                ]
+            }
+        },
+        "next": [
+            "挑战次数为最小值1-开始挑战",
+            "为红色减一次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8254,
+                "y": 1779
+            }
+        }
+    },
+    "滑动关卡列表": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1012,
+                    588,
+                    23,
+                    11
+                ],
+                "end": [
+                    [
+                        1017,
+                        171,
+                        26,
+                        19
+                    ]
+                ],
+                "duration": [
+                    1500
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4919,
+                "y": 2782
+            }
+        }
+    },
+    "潜能": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "潜能"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]潜能_第二次",
+            "开始选择具体关卡_潜能"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4307,
+                "y": 1660
+            }
+        }
+    },
+    "潜能_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "潜能"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4553,
+                "y": 1480
+            }
+        }
+    },
+    "记忆碎片": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "记忆碎片"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]记忆碎片_第二次",
+            "开始选择具体关卡_记忆碎片"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4233,
+                "y": 2109
+            }
+        }
+    },
+    "记忆碎片_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    107,
+                    59,
+                    157,
+                    570
+                ],
+                "expected": [
+                    "记忆碎片"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4532,
+                "y": 1911
+            }
+        }
+    },
+    "进入战斗挑战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    68,
+                    467,
+                    1134,
+                    58
+                ],
+                "expected": [
+                    "战斗训练"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]进入战斗挑战_第二次",
+            "开始选择刷什么类型关卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3301,
+                "y": 887
+            }
+        }
+    },
+    "进入战斗挑战_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    68,
+                    467,
+                    1134,
+                    58
+                ],
+                "expected": [
+                    "战斗训练"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3552,
+                "y": 667
+            }
+        }
+    },
+    "进入模拟界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    661,
+                    20,
+                    215,
+                    524
+                ],
+                "expected": [
+                    "模拟"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]进入模拟界面_第二次",
+            "进入战斗挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3002,
+                "y": 830
+            }
+        }
+    },
+    "进入模拟界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    661,
+                    20,
+                    215,
+                    524
+                ],
+                "expected": [
+                    "模拟"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3258,
+                "y": 655
+            }
+        }
+    },
+    "选择主战员升级材料关卡_成长": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "主战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "判断是否位于配置任务界面",
+            "[JumpBack]选择主战员升级材料关卡_成长_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5567,
+                "y": -1000
+            }
+        }
+    },
+    "选择主战员升级材料关卡_成长_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "主战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5987,
+                "y": -1142
+            }
+        }
+    },
+    "选择单元币关卡_成长": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "单元币"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "判断是否位于配置任务界面",
+            "[JumpBack]选择单元币关卡_成长_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5586,
+                "y": -1287
+            }
+        }
+    },
+    "选择单元币关卡_成长_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "单元币"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5932,
+                "y": -1372
+            }
+        }
+    },
+    "选择晋级材料-前锋": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "前锋"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择晋级材料-前锋_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5525,
+                "y": -392
+            }
+        }
+    },
+    "选择晋级材料-前锋_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "前锋"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5817,
+                "y": -512
+            }
+        }
+    },
+    "选择晋级材料-奥义师": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "奥义师"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择晋级材料-奥义师_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5480,
+                "y": 470
+            }
+        }
+    },
+    "选择晋级材料-奥义师_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "奥义师"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5825,
+                "y": 379
+            }
+        }
+    },
+    "选择晋级材料-守卫": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "守卫"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择晋级材料-守卫_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5524,
+                "y": -179
+            }
+        }
+    },
+    "选择晋级材料-守卫_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "守卫"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5858,
+                "y": -250
+            }
+        }
+    },
+    "选择晋级材料-操控师": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "操控师"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择晋级材料-操控师_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5467,
+                "y": 706
+            }
+        }
+    },
+    "选择晋级材料-操控师_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "操控师"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5812,
+                "y": 588
+            }
+        }
+    },
+    "选择晋级材料-游侠": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "游侠"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择晋级材料-游侠_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5527,
+                "y": 18
+            }
+        }
+    },
+    "选择晋级材料-游侠_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "游侠"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5882,
+                "y": -35
+            }
+        }
+    },
+    "选择晋级材料-猎人": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "猎人"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择晋级材料-猎人_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5507,
+                "y": 248
+            }
+        }
+    },
+    "选择晋级材料-猎人_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "猎人"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5829,
+                "y": 175
+            }
+        }
+    },
+    "选择潜能材料-本能": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "本能"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择潜能材料-本能_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5420,
+                "y": 1289
+            }
+        }
+    },
+    "选择潜能材料-本能_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "本能"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5771,
+                "y": 1239
+            }
+        }
+    },
+    "选择潜能材料-正义": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "正义"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择潜能材料-正义_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5420,
+                "y": 1710
+            }
+        }
+    },
+    "选择潜能材料-正义_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "正义"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5727,
+                "y": 1662
+            }
+        }
+    },
+    "选择潜能材料-热情": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "热情"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择潜能材料-热情_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5459,
+                "y": 910
+            }
+        }
+    },
+    "选择潜能材料-热情_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "热情"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5816,
+                "y": 811
+            }
+        }
+    },
+    "选择潜能材料-秩序": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "秩序"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择潜能材料-秩序_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5420,
+                "y": 1112
+            }
+        }
+    },
+    "选择潜能材料-秩序_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "秩序"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5779,
+                "y": 1043
+            }
+        }
+    },
+    "选择潜能材料-虚无": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "虚无"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择潜能材料-虚无_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5421,
+                "y": 1487
+            }
+        }
+    },
+    "选择潜能材料-虚无_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "虚无"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5762,
+                "y": 1444
+            }
+        }
+    },
+    "选择记忆碎片-光荣与权威": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "光荣与权威"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-光荣与权威_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5462,
+                "y": 3019
+            }
+        }
+    },
+    "选择记忆碎片-光荣与权威_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "光荣与权威"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5746,
+                "y": 2915
+            }
+        }
+    },
+    "选择记忆碎片-地位与行踪": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "地位与行踪"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-地位与行踪_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5442,
+                "y": 2805
+            }
+        }
+    },
+    "选择记忆碎片-地位与行踪_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "地位与行踪"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5721,
+                "y": 2708
+            }
+        }
+    },
+    "选择记忆碎片-序曲与梦境": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "序曲与梦境"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-序曲与梦境_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5407,
+                "y": 2150
+            }
+        }
+    },
+    "选择记忆碎片-序曲与梦境_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "序曲与梦境"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5745,
+                "y": 2088
+            }
+        }
+    },
+    "选择记忆碎片-循环与命运": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "循环与命运"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-循环与命运_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5438,
+                "y": 3243
+            }
+        }
+    },
+    "选择记忆碎片-循环与命运_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "循环与命运"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5763,
+                "y": 3142
+            }
+        }
+    },
+    "选择记忆碎片-欲望与主宰": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "欲望与主宰"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-欲望与主宰_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5391,
+                "y": 2372
+            }
+        }
+    },
+    "选择记忆碎片-欲望与主宰_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "欲望与主宰"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5722,
+                "y": 2287
+            }
+        }
+    },
+    "选择记忆碎片-焰与宝珠": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "焰与宝"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-焰与宝珠_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5443,
+                "y": 2604
+            }
+        }
+    },
+    "选择记忆碎片-焰与宝珠_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "焰与宝"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5710,
+                "y": 2501
+            }
+        }
+    },
+    "选择记忆碎片-贪婪与执着": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "贪婪与执着"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-贪婪与执着_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5430,
+                "y": 3473
+            }
+        }
+    },
+    "选择记忆碎片-贪婪与执着_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "贪婪与执着"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5743,
+                "y": 3342
+            }
+        }
+    },
+    "选择记忆碎片-进化与荆棘": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "进化与荆棘"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-进化与荆棘_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5418,
+                "y": 1919
+            }
+        }
+    },
+    "选择记忆碎片-进化与荆棘_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "进化与荆棘"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5714,
+                "y": 1873
+            }
+        }
+    },
+    "选择记忆碎片-遗骸与工具": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "遗骸与工具"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-遗骸与工具_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5440,
+                "y": 3878
+            }
+        }
+    },
+    "选择记忆碎片-遗骸与工具_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "遗骸与工具"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5734,
+                "y": 3793
+            }
+        }
+    },
+    "选择记忆碎片-金龟子与约定": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "金龟子与约定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择记忆碎片-金龟子与约定_第二次",
+            "判断是否位于配置任务界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5441,
+                "y": 3664
+            }
+        }
+    },
+    "选择记忆碎片-金龟子与约定_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "金龟子与约定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5750,
+                "y": 3590
+            }
+        }
+    },
+    "选择辅战员升级材料关卡_成长": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "辅战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "判断是否位于配置任务界面",
+            "[JumpBack]选择辅战员升级材料关卡_成长_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5564,
+                "y": -749
+            }
+        }
+    },
+    "选择辅战员升级材料关卡_成长_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    819,
+                    64,
+                    236,
+                    649
+                ],
+                "expected": [
+                    "辅战员"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6037,
+                "y": -903
+            }
+        }
+    },
+    "关卡挑战开始": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    884,
+                    632,
+                    76,
+                    55
+                ],
+                "expected": [
+                    "进入"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]关卡挑战开始_第二次",
+            "开始关卡内处理"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8868,
+                "y": 2198
+            }
+        }
+    },
+    "开始关卡内处理": {
+        "next": [
+            "关卡内处理开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 9401,
+                "y": 2260
+            }
+        }
+    },
+    "$__mpe_external_关卡内处理开始_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9729,
+                "y": 2281
+            }
+        }
+    },
+    "挑战次数为最小值1-开始挑战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1004,
+                    551,
+                    133,
+                    37
+                ],
+                "expected": [
+                    "1"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8605,
+                "y": 1551
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_刷体力": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9096,
+                "y": 1702
+            }
+        }
+    },
+    "消耗体力不是红色开始战斗": {
+        "next": [
+            "消耗体力为红色嘛_第二次",
+            "关卡挑战开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8203,
+                "y": 2221
+            }
+        }
+    },
+    "关卡挑战开始_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    884,
+                    632,
+                    76,
+                    55
+                ],
+                "expected": [
+                    "进入"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 9546,
+                "y": 1941
+            }
+        }
+    },
+    "消耗体力为红色嘛_第二次": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    1175,
+                    641,
+                    65,
+                    35
+                ],
+                "lower": [
+                    [
+                        193,
+                        72,
+                        95
+                    ]
+                ],
+                "upper": [
+                    [
+                        193,
+                        72,
+                        95
+                    ]
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8651,
+                "y": 2412
+            }
+        }
+    }
+}

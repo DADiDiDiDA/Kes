@@ -1,0 +1,151 @@
+{
+    "$__mpe_config_关卡内处理": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1787835655162,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\关卡内处理.json",
+            "savedViewport": {
+                "x": -8645,
+                "y": -1409,
+                "zoom": 0.75
+            },
+            "filename": "关卡内处理",
+            "version": "v1.9.0"
+        }
+    },
+    "位于关卡内-等待战斗结束": {
+        "timeout": -1,
+        "next": [
+            "战斗成功结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11446,
+                "y": 2115
+            }
+        }
+    },
+    "关卡内处理开始": {
+        "next": [
+            "判断是否位于关卡内"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10522,
+                "y": 2151
+            }
+        }
+    },
+    "判断是否位于关卡内": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    916,
+                    3,
+                    360,
+                    66
+                ],
+                "template": [
+                    "战斗波次图标.png"
+                ]
+            }
+        },
+        "next": [
+            "位于关卡内-等待战斗结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 10926,
+                "y": 2115
+            }
+        }
+    },
+    "战斗成功结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    725,
+                    420,
+                    84,
+                    50
+                ],
+                "expected": [
+                    "奖励"
+                ]
+            }
+        },
+        "next": [
+            "确认成功战斗结果"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11842,
+                "y": 1963
+            }
+        }
+    },
+    "确认成功战斗结果": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1101,
+                    634,
+                    141,
+                    57
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "关卡内处理结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12252,
+                "y": 2023
+            }
+        }
+    },
+    "战斗失败了确认结果": {
+        "next": [
+            "确认失败战斗结果"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11837,
+                "y": 2284
+            }
+        }
+    },
+    "确认失败战斗结果": {
+        "next": [
+            "关卡内处理结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12166,
+                "y": 2287
+            }
+        }
+    },
+    "关卡内处理结束": {
+        "post_delay": 3000,
+        "$__mpe_code": {
+            "position": {
+                "x": 12620,
+                "y": 2172
+            }
+        }
+    }
+}

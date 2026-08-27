@@ -1,0 +1,230 @@
+{
+    "$__mpe_config_领取补给奖励": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -7068,
+                "y": -995,
+                "zoom": 0.57
+            },
+            "filename": "领取补给奖励",
+            "version": "v1.9.0"
+        }
+    },
+    "领取补给奖励开始": {
+        "next": [
+            "进入本期补给界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11932,
+                "y": 2137
+            }
+        }
+    },
+    "进入本期补给界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    915,
+                    40,
+                    215,
+                    571
+                ],
+                "expected": [
+                    "补给"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入补给任务界面",
+            "[JumpBack]进入本期补给界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12266,
+                "y": 2120
+            }
+        }
+    },
+    "进入补给任务界面": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    31,
+                    73,
+                    83,
+                    243
+                ],
+                "template": [
+                    "补给任务图标.png",
+                    "补给任务图标-未激活.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "领取补给任务"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 12658,
+                "y": 1747
+            }
+        }
+    },
+    "领取补给任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    766,
+                    634,
+                    125,
+                    60
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "进入补给等级界面",
+            "[JumpBack]确认奖励-补给"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13049,
+                "y": 1796
+            }
+        }
+    },
+    "进入本期补给界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    915,
+                    40,
+                    215,
+                    571
+                ],
+                "expected": [
+                    "补给"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 12653,
+                "y": 2424
+            }
+        }
+    },
+    "进入补给等级界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    31,
+                    73,
+                    83,
+                    243
+                ],
+                "template": [
+                    "补给等级图标.png",
+                    "补给等级图标-已激活.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "领取补给等级奖励"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13438,
+                "y": 2062
+            }
+        }
+    },
+    "确认奖励-补给": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    324,
+                    603,
+                    511,
+                    115
+                ],
+                "expected": [
+                    "点击"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13448,
+                "y": 1815
+            }
+        }
+    },
+    "领取补给等级奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    766,
+                    634,
+                    125,
+                    60
+                ],
+                "expected": [
+                    "领取"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 13759,
+                "y": 2068
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_领取补给奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 14161,
+                "y": 2101
+            }
+        }
+    }
+}
