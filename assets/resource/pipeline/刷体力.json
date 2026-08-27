@@ -3,14 +3,10 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1787834246883,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\刷体力.json",
             "savedViewport": {
-                "x": -2989,
-                "y": -777,
-                "zoom": 0.49
+                "x": -4374,
+                "y": -1001,
+                "zoom": 0.57
             },
             "filename": "刷体力",
             "version": "v1.9.0"
@@ -39,8 +35,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8642,
-                "y": 1902
+                "x": 8644,
+                "y": 1845
             }
         }
     },
@@ -232,7 +228,8 @@
         "next": [
             "[JumpBack]增加五次关卡挑战次数",
             "消耗体力为红色嘛",
-            "[JumpBack]消耗体力不是红色开始战斗"
+            "[JumpBack]消耗体力不是红色开始战斗",
+            "体力不足_第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -1994,6 +1991,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]关卡挑战开始_第二次",
             "开始关卡内处理"
@@ -2052,15 +2050,16 @@
     "$__mpe_external_返回主界面开始_刷体力": {
         "$__mpe_code": {
             "position": {
-                "x": 9096,
-                "y": 1702
+                "x": 9265,
+                "y": 1944
             }
         }
     },
     "消耗体力不是红色开始战斗": {
         "next": [
             "消耗体力为红色嘛_第二次",
-            "关卡挑战开始"
+            "关卡挑战开始",
+            "体力不足"
         ],
         "$__mpe_code": {
             "position": {
@@ -2122,8 +2121,55 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8651,
-                "y": 2412
+                "x": 8534,
+                "y": 2580
+            }
+        }
+    },
+    "体力不足": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    581,
+                    72,
+                    118,
+                    45
+                ],
+                "expected": [
+                    "以太"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8569,
+                "y": 2374
+            }
+        }
+    },
+    "体力不足_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    581,
+                    72,
+                    118,
+                    45
+                ],
+                "expected": [
+                    "以太"
+                ]
+            }
+        },
+        "next": [
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8298,
+                "y": 2055
             }
         }
     }
