@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -7068,
-                "y": -995,
-                "zoom": 0.57
+                "x": -8181,
+                "y": -1025,
+                "zoom": 0.65
             },
             "filename": "领取补给奖励",
-            "version": "v1.9.0"
+            "version": "v1.9.1"
         }
     },
     "领取补给奖励开始": {
@@ -54,7 +54,6 @@
         }
     },
     "进入补给任务界面": {
-        "max_hit": 1,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -74,12 +73,13 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]进入补给任务界面_副本3",
             "领取补给任务"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 12658,
-                "y": 1747
+                "x": 12629,
+                "y": 1749
             }
         }
     },
@@ -101,6 +101,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
             "进入补给等级界面",
             "[JumpBack]确认奖励-补给"
@@ -157,11 +158,12 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]进入补给等级界面_副本4",
             "领取补给等级奖励"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 13438,
+                "x": 13425,
                 "y": 2062
             }
         }
@@ -186,8 +188,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 13448,
-                "y": 1815
+                "x": 13440,
+                "y": 1773
             }
         }
     },
@@ -214,8 +216,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 13759,
-                "y": 2068
+                "x": 13785,
+                "y": 2062
             }
         }
     },
@@ -224,6 +226,60 @@
             "position": {
                 "x": 14161,
                 "y": 2101
+            }
+        }
+    },
+    "进入补给任务界面_副本3": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    31,
+                    73,
+                    83,
+                    243
+                ],
+                "template": [
+                    "补给任务图标.png",
+                    "补给任务图标-未激活.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 12955,
+                "y": 1499
+            }
+        }
+    },
+    "进入补给等级界面_副本4": {
+        "max_hit": 3,
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    31,
+                    73,
+                    83,
+                    243
+                ],
+                "template": [
+                    "补给等级图标.png",
+                    "补给等级图标-已激活.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 13707,
+                "y": 1754
             }
         }
     }

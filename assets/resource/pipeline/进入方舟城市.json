@@ -1,0 +1,62 @@
+{
+    "$__mpe_config_进入方舟城市": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -704,
+                "y": 199,
+                "zoom": 0.75
+            },
+            "filename": "进入方舟城市",
+            "version": "v1.9.1"
+        }
+    },
+    "进入方舟城市开始": {
+        "next": [
+            "诺诺在说话吗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1268,
+                "y": 217
+            }
+        }
+    },
+    "诺诺在说话吗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    109,
+                    517,
+                    81,
+                    49
+                ],
+                "expected": [
+                    "诺诺"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "对话框处理结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1648,
+                "y": 60
+            }
+        }
+    },
+    "对话框处理结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1991,
+                "y": 228
+            }
+        }
+    }
+}

@@ -4,17 +4,17 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -738,
-                "y": 150,
+                "x": -988,
+                "y": 83,
                 "zoom": 0.65
             },
             "filename": "喝咖啡",
-            "version": "v1.9.0"
+            "version": "v1.9.1"
         }
     },
     "喝咖啡开始": {
         "next": [
-            "进入"
+            "进入方舟界面-喝咖啡"
         ],
         "$__mpe_code": {
             "position": {
@@ -23,11 +23,295 @@
             }
         }
     },
-    "进入": {
+    "进入方舟界面-喝咖啡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    693,
+                    310,
+                    102,
+                    60
+                ],
+                "expected": [
+                    "方舟城市"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "进入咖啡店界面-喝咖啡",
+            "[JumpBack]进入方舟城市开始",
+            "[JumpBack]进入方舟界面_第二次"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2191,
-                "y": 172
+                "x": 2227,
+                "y": 196
+            }
+        }
+    },
+    "$__mpe_external_进入方舟城市开始_喝咖啡": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2635,
+                "y": 112
+            }
+        }
+    },
+    "进入咖啡店界面-喝咖啡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    512,
+                    648,
+                    116,
+                    36
+                ],
+                "expected": [
+                    "咖啡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择点单-喝咖啡",
+            "[JumpBack]进入咖啡店界面_第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2656,
+                "y": 223
+            }
+        }
+    },
+    "进入方舟界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    693,
+                    310,
+                    102,
+                    60
+                ],
+                "expected": [
+                    "方舟城市"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 2477,
+                "y": 491
+            }
+        }
+    },
+    "选择点单-喝咖啡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    965,
+                    625,
+                    74,
+                    57
+                ],
+                "expected": [
+                    "点单"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "选择咖啡类型-堂食-喝咖啡",
+            "[JumpBack]选择点单_第二次-喝咖啡",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3036,
+                "y": 136
+            }
+        }
+    },
+    "进入咖啡店界面_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    512,
+                    648,
+                    116,
+                    36
+                ],
+                "expected": [
+                    "咖啡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2959,
+                "y": 444
+            }
+        }
+    },
+    "选择咖啡类型-堂食-喝咖啡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    780,
+                    163,
+                    50,
+                    58
+                ],
+                "expected": [
+                    "堂食"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]选择咖啡类型-堂食-喝咖啡_第二次",
+            "确认享用咖啡-喝咖啡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3322,
+                "y": -326
+            }
+        }
+    },
+    "确认享用咖啡-喝咖啡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    906,
+                    609,
+                    73,
+                    50
+                ],
+                "expected": [
+                    "点单"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]确认享用咖啡-喝咖啡_第二次",
+            "返回主界面开始"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3754,
+                "y": -267
+            }
+        }
+    },
+    "$__mpe_external_返回主界面开始_喝咖啡": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4026,
+                "y": 161
+            }
+        }
+    },
+    "选择点单_第二次-喝咖啡": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    965,
+                    625,
+                    74,
+                    57
+                ],
+                "expected": [
+                    "点单"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3432,
+                "y": -75
+            }
+        }
+    },
+    "确认享用咖啡-喝咖啡_第二次": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    906,
+                    609,
+                    73,
+                    50
+                ],
+                "expected": [
+                    "点单"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4078,
+                "y": -320
+            }
+        }
+    },
+    "选择咖啡类型-堂食-喝咖啡_第二次": {
+        "max_hit": 2,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    780,
+                    163,
+                    50,
+                    58
+                ],
+                "expected": [
+                    "堂食"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 3607,
+                "y": -535
             }
         }
     }
