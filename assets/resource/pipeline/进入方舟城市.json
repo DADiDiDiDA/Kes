@@ -4,17 +4,19 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -704,
-                "y": 199,
-                "zoom": 0.75
+                "x": -554,
+                "y": 138,
+                "zoom": 0.76
             },
             "filename": "进入方舟城市",
             "version": "v1.9.1"
         }
     },
     "进入方舟城市开始": {
+        "post_delay": 1500,
         "next": [
-            "诺诺在说话吗"
+            "诺诺在说话吗",
+            "对话框处理结束"
         ],
         "$__mpe_code": {
             "position": {
@@ -46,8 +48,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1648,
-                "y": 60
+                "x": 1628,
+                "y": 15
             }
         }
     },

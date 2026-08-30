@@ -4,9 +4,9 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -8181,
-                "y": -1025,
-                "zoom": 0.65
+                "x": -9646,
+                "y": -1279,
+                "zoom": 0.76
             },
             "filename": "领取补给奖励",
             "version": "v1.9.1"
@@ -158,7 +158,7 @@
             "type": "Click"
         },
         "next": [
-            "[JumpBack]进入补给等级界面_副本4",
+            "[JumpBack]进入补给等级界面_第二次",
             "领取补给等级奖励"
         ],
         "$__mpe_code": {
@@ -256,7 +256,7 @@
             }
         }
     },
-    "进入补给等级界面_副本4": {
+    "进入补给等级界面_第二次": {
         "max_hit": 3,
         "recognition": {
             "type": "TemplateMatch",
