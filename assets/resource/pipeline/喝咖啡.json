@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -988,
-                "y": 83,
-                "zoom": 0.65
+                "x": -1944,
+                "y": 394,
+                "zoom": 0.76
             },
             "filename": "喝咖啡",
-            "version": "v1.9.1"
+            "version": "v1.9.3"
         }
     },
     "喝咖啡开始": {
@@ -265,6 +265,7 @@
         }
     },
     "确认享用咖啡-喝咖啡_第二次": {
+        "max_hit": 2,
         "recognition": {
             "type": "OCR",
             "param": {
