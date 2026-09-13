@@ -3,16 +3,21 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1788944520076,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -670,
-                "y": -984,
-                "zoom": 0.75
+                "x": -496,
+                "y": -917,
+                "zoom": 0.65
             },
             "filename": "返回主界面",
-            "version": "v1.9.2"
+            "version": "v1.9.3"
         }
     },
     "下部分情况处理": {
+        "max_hit": 20,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -34,8 +39,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1709,
-                "y": 953
+                "x": 1704,
+                "y": 872
             }
         }
     },
@@ -56,8 +61,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1856,
-                "y": -595
+                "x": 1529,
+                "y": -852
             }
         }
     },
@@ -78,16 +83,16 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 2278,
-                "y": -584
+                "x": 1914,
+                "y": -814
             }
         }
     },
     "主界面菜单已打开": {
         "$__mpe_code": {
             "position": {
-                "x": 2353,
-                "y": 11
+                "x": 2414,
+                "y": -126
             }
         }
     },
@@ -107,8 +112,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1684,
-                "y": -34
+                "x": 1666,
+                "y": -89
             }
         }
     },
@@ -127,8 +132,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2038,
-                "y": -3
+                "x": 2046,
+                "y": -116
             }
         }
     },
@@ -143,7 +148,8 @@
                     112
                 ],
                 "template": [
-                    "日记界面退出.png"
+                    "日记界面退出.png",
+                    "公告按钮.png"
                 ]
             }
         },
@@ -153,8 +159,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1704,
-                "y": 607
+                "x": 1702,
+                "y": 549
             }
         }
     },
@@ -205,6 +211,23 @@
             }
         }
     },
+    "尝试按Esc处理_第二次": {
+        "action": {
+            "type": "ClickKey",
+            "param": {
+                "key": [
+                    111
+                ]
+            }
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 1681,
+                "y": 2046
+            }
+        }
+    },
     "尝试点击菜单界面": {
         "recognition": {
             "type": "OCR",
@@ -228,8 +251,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1713,
-                "y": 1263
+                "x": 1719,
+                "y": 1245
             }
         }
     },
@@ -259,8 +282,20 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1708,
-                "y": 232
+                "x": 1694,
+                "y": 172
+            }
+        }
+    },
+    "无法处理的错误": {
+        "max_hit": 1,
+        "action": {
+            "type": "Screencap"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1703,
+                "y": 1849
             }
         }
     },
@@ -298,8 +333,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2052,
-                "y": -279
+                "x": 2129,
+                "y": -598
             }
         }
     },
@@ -307,6 +342,7 @@
         "timeout": 300000,
         "next": [
             "[JumpBack]退出游戏过头了",
+            "[JumpBack]需要更新资源",
             "判断是否在主界面",
             "[JumpBack]左上角返回",
             "[JumpBack]右上角处理",
@@ -318,8 +354,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1279,
-                "y": 118
+                "x": 1199,
+                "y": 74
             }
         }
     },
@@ -344,37 +380,95 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1696,
-                "y": -329
+                "x": 1619,
+                "y": -616
             }
         }
     },
-    "尝试按Esc处理_第二次": {
-        "action": {
-            "type": "ClickKey",
+    "需要更新资源": {
+        "recognition": {
+            "type": "OCR",
             "param": {
-                "key": [
-                    111
+                "roi": [
+                    586,
+                    195,
+                    113,
+                    52
+                ],
+                "expected": [
+                    "下载内容"
                 ]
             }
         },
-        "post_delay": 2000,
+        "next": [
+            "确认资源更新"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 1681,
-                "y": 2046
+                "x": 1662,
+                "y": -337
             }
         }
     },
-    "无法处理的错误": {
-        "max_hit": 1,
+    "确认资源更新": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    806,
+                    473,
+                    92,
+                    52
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
         "action": {
-            "type": "Screencap"
+            "type": "Click"
+        },
+        "next": [
+            "等待更新下载"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1979,
+                "y": -358
+            }
+        }
+    },
+    "等待更新下载": {
+        "timeout": -1,
+        "next": [
+            "更新完成已到主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2239,
+                "y": -356
+            }
+        }
+    },
+    "更新完成已到主界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    62,
+                    614,
+                    102,
+                    42
+                ],
+                "expected": [
+                    "资源修复"
+                ]
+            }
         },
         "$__mpe_code": {
             "position": {
-                "x": 1703,
-                "y": 1849
+                "x": 2557,
+                "y": -340
             }
         }
     }
