@@ -3,17 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1788944520076,
+            "lastSyncTime": 1789956017136,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -496,
-                "y": -917,
-                "zoom": 0.65
+                "x": -557,
+                "y": -202,
+                "zoom": 0.66
             },
             "filename": "返回主界面",
-            "version": "v1.9.3"
+            "version": "v1.10.1"
         }
     },
     "下部分情况处理": {
@@ -39,8 +39,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1704,
-                "y": 872
+                "x": 1720,
+                "y": 1051
             }
         }
     },
@@ -251,8 +251,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1719,
-                "y": 1245
+                "x": 1729,
+                "y": 1320
             }
         }
     },
@@ -310,6 +310,28 @@
             }
         }
     },
+    "更新完成已到主界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    62,
+                    614,
+                    102,
+                    42
+                ],
+                "expected": [
+                    "资源修复"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2557,
+                "y": -340
+            }
+        }
+    },
     "确认取消退出游戏": {
         "recognition": {
             "type": "OCR",
@@ -338,6 +360,46 @@
             }
         }
     },
+    "确认资源更新": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    806,
+                    473,
+                    92,
+                    52
+                ],
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "等待更新下载"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1979,
+                "y": -358
+            }
+        }
+    },
+    "等待更新下载": {
+        "timeout": -1,
+        "next": [
+            "更新完成已到主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2239,
+                "y": -356
+            }
+        }
+    },
     "返回主界面开始": {
         "timeout": 300000,
         "next": [
@@ -346,6 +408,7 @@
             "判断是否在主界面",
             "[JumpBack]左上角返回",
             "[JumpBack]右上角处理",
+            "[JumpBack]上次退出有未完成的挑战",
             "[JumpBack]下部分情况处理",
             "[JumpBack]尝试点击菜单界面",
             "[JumpBack]尝试按Esc处理",
@@ -410,65 +473,53 @@
             }
         }
     },
-    "确认资源更新": {
+    "上次退出有未完成的挑战": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    806,
-                    473,
-                    92,
-                    52
+                    474,
+                    281,
+                    351,
+                    94
                 ],
                 "expected": [
-                    "确认"
+                    "是否继续"
+                ]
+            }
+        },
+        "next": [
+            "结束上次未完成的挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1702,
+                "y": 833
+            }
+        }
+    },
+    "结束上次未完成的挑战": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    441,
+                    522,
+                    84,
+                    58
+                ],
+                "expected": [
+                    "逃脱"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "next": [
-            "等待更新下载"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 1979,
-                "y": -358
-            }
-        }
-    },
-    "等待更新下载": {
-        "timeout": -1,
-        "next": [
-            "更新完成已到主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2239,
-                "y": -356
-            }
-        }
-    },
-    "更新完成已到主界面": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    62,
-                    614,
-                    102,
-                    42
-                ],
-                "expected": [
-                    "资源修复"
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 2557,
-                "y": -340
+                "x": 2031,
+                "y": 835
             }
         }
     }
