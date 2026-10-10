@@ -3,17 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1789956017136,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -557,
-                "y": -202,
-                "zoom": 0.66
+                "x": -744,
+                "y": -940,
+                "zoom": 0.75
             },
             "filename": "返回主界面",
-            "version": "v1.10.1"
+            "version": "v2.0.7"
         }
     },
     "下部分情况处理": {
@@ -22,14 +18,15 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    580,
-                    553,
-                    121,
-                    124
+                    528,
+                    545,
+                    240,
+                    160
                 ],
                 "expected": [
                     "确认",
-                    "点击开始"
+                    "点击开始",
+                    "关闭"
                 ]
             }
         },
@@ -39,8 +36,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1720,
-                "y": 1051
+                "x": 1699,
+                "y": 1430
             }
         }
     },
@@ -176,8 +173,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 839,
-                "y": -31
+                "x": 241,
+                "y": -58
             }
         }
     },
@@ -188,8 +185,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 397,
-                "y": 154
+                "x": -308,
+                "y": 69
             }
         }
     },
@@ -206,8 +203,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1737,
-                "y": 1565
+                "x": 1774,
+                "y": 1988
             }
         }
     },
@@ -223,8 +220,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1681,
-                "y": 2046
+                "x": 1714,
+                "y": 2442
             }
         }
     },
@@ -251,8 +248,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1729,
-                "y": 1320
+                "x": 1785,
+                "y": 1731
             }
         }
     },
@@ -294,8 +291,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1703,
-                "y": 1849
+                "x": 1764,
+                "y": 2240
             }
         }
     },
@@ -305,8 +302,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 812,
-                "y": 273
+                "x": 248,
+                "y": 214
             }
         }
     },
@@ -408,6 +405,7 @@
             "判断是否在主界面",
             "[JumpBack]左上角返回",
             "[JumpBack]右上角处理",
+            "[JumpBack]有可跳过的剧情出现",
             "[JumpBack]上次退出有未完成的挑战",
             "[JumpBack]下部分情况处理",
             "[JumpBack]尝试点击菜单界面",
@@ -417,8 +415,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1199,
-                "y": 74
+                "x": 797,
+                "y": 31
             }
         }
     },
@@ -493,8 +491,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1702,
-                "y": 833
+                "x": 1672,
+                "y": 1187
             }
         }
     },
@@ -519,7 +517,32 @@
         "$__mpe_code": {
             "position": {
                 "x": 2031,
-                "y": 835
+                "y": 1203
+            }
+        }
+    },
+    "有可跳过的剧情出现": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1131,
+                    11,
+                    142,
+                    70
+                ],
+                "expected": [
+                    "跳过"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1721,
+                "y": 849
             }
         }
     }
