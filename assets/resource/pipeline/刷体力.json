@@ -30,6 +30,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "开始调整战斗次数"
         ],
@@ -58,6 +59,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]主战员_第二次",
             "开始选择具体关卡_主战员"
@@ -88,6 +90,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4506,
@@ -149,6 +152,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]副战员_第二次",
             "开始选择具体关卡_副战员"
@@ -179,6 +183,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4571,
@@ -205,6 +210,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 8047,
@@ -224,7 +230,7 @@
         }
     },
     "开始调整战斗次数": {
-        "post_delay": 1500,
+        "post_delay": 2000,
         "next": [
             "[JumpBack]增加五次关卡挑战次数",
             "消耗体力为红色嘛",
@@ -355,6 +361,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]成长_第二次",
             "开始选择具体关卡_成长"
@@ -385,6 +392,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4451,
@@ -452,6 +460,7 @@
                 ]
             }
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4919,
@@ -477,6 +486,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]潜能_第二次",
             "开始选择具体关卡_潜能"
@@ -507,6 +517,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4553,
@@ -532,6 +543,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]记忆碎片_第二次",
             "开始选择具体关卡_记忆碎片"
@@ -562,6 +574,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 4532,
@@ -587,6 +600,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]进入战斗挑战_第二次",
             "开始选择刷什么类型关卡"
@@ -616,6 +630,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3552,
@@ -641,6 +656,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]进入模拟界面_第二次",
             "进入战斗挑战"
@@ -670,6 +686,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 3258,
@@ -695,6 +712,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "判断是否位于配置任务界面",
             "[JumpBack]选择主战员升级材料关卡_成长_第二次"
@@ -724,6 +742,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5987,
@@ -749,6 +768,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "判断是否位于配置任务界面",
             "[JumpBack]选择单元币关卡_成长_第二次"
@@ -778,6 +798,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5932,
@@ -803,6 +824,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择晋级材料-前锋_第二次",
             "判断是否位于配置任务界面"
@@ -832,6 +854,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5817,
@@ -857,6 +880,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择晋级材料-奥义师_第二次",
             "判断是否位于配置任务界面"
@@ -886,6 +910,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5825,
@@ -911,6 +936,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择晋级材料-守卫_第二次",
             "判断是否位于配置任务界面"
@@ -940,6 +966,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5858,
@@ -965,6 +992,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择晋级材料-操控师_第二次",
             "判断是否位于配置任务界面"
@@ -994,6 +1022,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5812,
@@ -1019,6 +1048,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择晋级材料-游侠_第二次",
             "判断是否位于配置任务界面"
@@ -1048,6 +1078,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5882,
@@ -1073,6 +1104,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择晋级材料-猎人_第二次",
             "判断是否位于配置任务界面"
@@ -1102,6 +1134,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5829,
@@ -1127,6 +1160,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择潜能材料-本能_第二次",
             "判断是否位于配置任务界面"
@@ -1156,6 +1190,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5771,
@@ -1181,6 +1216,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择潜能材料-正义_第二次",
             "判断是否位于配置任务界面"
@@ -1210,6 +1246,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5727,
@@ -1235,6 +1272,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择潜能材料-热情_第二次",
             "判断是否位于配置任务界面"
@@ -1264,6 +1302,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5816,
@@ -1289,6 +1328,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择潜能材料-秩序_第二次",
             "判断是否位于配置任务界面"
@@ -1318,6 +1358,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5779,
@@ -1343,6 +1384,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择潜能材料-虚无_第二次",
             "判断是否位于配置任务界面"
@@ -1372,6 +1414,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5762,
@@ -1397,6 +1440,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-光荣与权威_第二次",
             "判断是否位于配置任务界面"
@@ -1426,6 +1470,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5746,
@@ -1451,6 +1496,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-地位与行踪_第二次",
             "判断是否位于配置任务界面"
@@ -1480,6 +1526,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5721,
@@ -1505,6 +1552,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-序曲与梦境_第二次",
             "判断是否位于配置任务界面"
@@ -1534,6 +1582,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5745,
@@ -1559,6 +1608,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-循环与命运_第二次",
             "判断是否位于配置任务界面"
@@ -1588,6 +1638,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5763,
@@ -1613,6 +1664,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-欲望与主宰_第二次",
             "判断是否位于配置任务界面"
@@ -1642,6 +1694,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5722,
@@ -1667,6 +1720,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-焰与宝珠_第二次",
             "判断是否位于配置任务界面"
@@ -1696,6 +1750,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5710,
@@ -1721,6 +1776,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-贪婪与执着_第二次",
             "判断是否位于配置任务界面"
@@ -1750,6 +1806,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5743,
@@ -1775,6 +1832,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-进化与荆棘_第二次",
             "判断是否位于配置任务界面"
@@ -1804,6 +1862,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5714,
@@ -1829,6 +1888,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-遗骸与工具_第二次",
             "判断是否位于配置任务界面"
@@ -1858,6 +1918,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5734,
@@ -1883,6 +1944,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "[JumpBack]选择记忆碎片-金龟子与约定_第二次",
             "判断是否位于配置任务界面"
@@ -1912,6 +1974,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 5750,
@@ -1937,6 +2000,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "判断是否位于配置任务界面",
             "[JumpBack]选择辅战员升级材料关卡_成长_第二次"
@@ -1966,6 +2030,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 6037,
@@ -2086,6 +2151,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 9546,

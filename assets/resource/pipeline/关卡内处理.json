@@ -3,21 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1789956208737,
-            "isModifiedExternally": false,
-            "isDeleted": false,
-            "filePath": "D:\\Application\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\关卡内处理.json",
             "savedViewport": {
-                "x": -6514,
-                "y": -978,
-                "zoom": 0.57
+                "x": -6969,
+                "y": -1198,
+                "zoom": 0.65
             },
             "filename": "关卡内处理",
-            "version": "v1.10.1"
+            "version": "v2.1.0"
         }
     },
     "位于关卡内-等待战斗结束": {
-        "timeout": 120000,
+        "timeout": 180000,
         "next": [
             "战斗结束1",
             "战斗结束2",
@@ -176,6 +172,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "next": [
             "关卡内处理结束"
         ],
@@ -204,6 +201,7 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 2000,
         "$__mpe_code": {
             "position": {
                 "x": 11093,
