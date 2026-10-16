@@ -1,7 +1,7 @@
 {
     "interface_version": 2,
     "name": "Kes",
-    "description": "Kes自动化脚本 - 只可以完成每日任务",
+    "description": "卡厄思梦境自动化脚本 - 只可以完成每日任务",
     "contact": "",
     "license": "MIT",
     "welcome": "",
@@ -29,7 +29,7 @@
             "name": "🎮 进入游戏",
             "entry": "启动游戏开始",
             "default_check": true,
-            "description": "自动启动游戏或跳过启动直接开始",
+            "description": "进入游戏",
             "option": ["是否需要启动游戏"]
         },
         {
@@ -67,7 +67,7 @@
             "name": "🎫 领取补给奖励",
             "entry": "领取补给奖励开始",
             "default_check": true,
-            "description": "领取补给界面中的可领取奖励（补给任务及等级奖励）"
+            "description": "领取补给界面中的可领取奖励"
         }
     ],
     
@@ -81,7 +81,7 @@
                 {
                     "name": "启动游戏",
                     "label": "🚀 启动游戏",
-                    "description": "自动启动游戏客户端",
+                    "description": "自动启动游戏",
                     "pipeline_override": {
                         "启动游戏开始": {
                             "next": ["启动游戏"]
