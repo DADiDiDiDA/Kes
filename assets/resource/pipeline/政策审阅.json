@@ -4,12 +4,12 @@
             "prefix": "",
             "coordinateMode": "absolute-v1",
             "savedViewport": {
-                "x": -7953,
-                "y": -1965,
-                "zoom": 0.87
+                "x": -6677,
+                "y": -1258,
+                "zoom": 0.7
             },
             "filename": "政策审阅",
-            "version": "v1.9.2"
+            "version": "v2.1.0"
         }
     },
     "$__mpe_external_返回主界面开始_政策审阅": {
@@ -137,7 +137,10 @@
             "[JumpBack]选择政策图标",
             "[JumpBack]开始政策批阅",
             "[JumpBack]开始进入政策室_第二次",
-            "[JumpBack]是不是多点击了什么界面"
+            "[JumpBack]是不是多点击了什么界面",
+            "[JumpBack]周期结束-领取周期奖励",
+            "[JumpBack]关闭新周期开始动画",
+            "[JumpBack]选择作战目标-最简单的"
         ],
         "$__mpe_code": {
             "position": {
@@ -361,8 +364,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 10221,
-                "y": 1941
+                "x": 10260,
+                "y": 1936
             }
         }
     },
@@ -845,8 +848,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 10118,
-                "y": 2639
+                "x": 10098,
+                "y": 2737
             }
         }
     }
