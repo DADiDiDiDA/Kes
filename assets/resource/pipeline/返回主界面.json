@@ -105,7 +105,7 @@
         },
         "post_delay": 3000,
         "next": [
-            "判断是否在主界面_第二次"
+            "判断是否在主界面-第二次"
         ],
         "$__mpe_code": {
             "position": {
@@ -114,7 +114,7 @@
             }
         }
     },
-    "判断是否在主界面_第二次": {
+    "判断是否在主界面-第二次": {
         "recognition": {
             "type": "And",
             "param": {
@@ -209,7 +209,7 @@
             }
         }
     },
-    "尝试按Esc处理_第二次": {
+    "尝试按Esc处理-第二次": {
         "action": {
             "type": "ClickKey",
             "param": {
@@ -351,7 +351,8 @@
         },
         "post_delay": 2000,
         "next": [
-            "尝试点击菜单界面"
+            "尝试点击菜单界面",
+            "[JumpBack]返回主界面开始"
         ],
         "$__mpe_code": {
             "position": {
@@ -415,7 +416,7 @@
             "[JumpBack]尝试点击菜单界面",
             "[JumpBack]尝试按Esc处理",
             "[JumpBack]无法处理的错误",
-            "[JumpBack]尝试按Esc处理_第二次"
+            "[JumpBack]尝试按Esc处理-第二次"
         ],
         "$__mpe_code": {
             "position": {
