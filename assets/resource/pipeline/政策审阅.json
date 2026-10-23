@@ -494,8 +494,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "选择作战目标-最简单的",
-            "[JumpBack]返回主界面开始"
+            "选择作战目标-最简单的"
         ],
         "$__mpe_code": {
             "position": {
@@ -532,8 +531,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "确认新周期计划",
-            "[JumpBack]返回主界面开始"
+            "确认新周期计划"
         ],
         "$__mpe_code": {
             "position": {
@@ -562,8 +560,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "自动配置角色",
-            "[JumpBack]返回主界面开始"
+            "自动配置角色"
         ],
         "$__mpe_code": {
             "position": {
@@ -749,8 +746,7 @@
         },
         "post_delay": 2000,
         "next": [
-            "确认配置结束",
-            "[JumpBack]返回主界面开始"
+            "确认配置结束"
         ],
         "$__mpe_code": {
             "position": {
