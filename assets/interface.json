@@ -6,7 +6,6 @@
     "license": "MIT",
     "welcome": "",
     "version": "0.1.4",
-    
     "controller": [
         {
             "name": "安卓端",
@@ -14,7 +13,6 @@
             "display_short_side": 720
         }
     ],
-    
     "resource": [
         {
             "name": "官服",
@@ -23,54 +21,70 @@
             ]
         }
     ],
-    
     "task": [
         {
             "name": "🎮 进入游戏",
             "entry": "启动游戏开始",
             "default_check": true,
             "description": "进入游戏",
-            "option": ["是否需要启动游戏"]
+            "option": [
+                "是否需要启动游戏"
+            ],
+            "label": "🎮 进入游戏",
+            "doc": "自动完成「🎮 进入游戏」。"
         },
         {
             "name": "📧 邮件奖励领取",
             "entry": "领取邮件开始",
             "default_check": true,
-            "description": "领取邮箱内所有奖励"
+            "description": "领取邮箱内所有奖励",
+            "label": "📧 邮件奖励领取",
+            "doc": "自动完成「📧 邮件奖励领取」。"
         },
         {
             "name": "☕喝咖啡",
             "entry": "喝咖啡开始",
             "default_check": true,
-            "description": "喝杯咖啡吧~~"
+            "description": "喝杯咖啡吧~~",
+            "label": "☕喝咖啡",
+            "doc": "自动完成「☕喝咖啡」。"
         },
         {
             "name": "⚔️ 刷体力",
             "entry": "刷体力开始",
             "default_check": true,
-            "option": ["选择刷什么类型关卡"],
-            "description": "选择要刷取的关卡类型及具体关卡"
+            "option": [
+                "选择刷什么类型关卡"
+            ],
+            "description": "选择要刷取的关卡类型及具体关卡",
+            "label": "⚔️ 刷体力",
+            "doc": "自动完成「⚔️ 刷体力」。"
         },
         {
             "name": "📜 政策审阅",
             "entry": "政策审阅开始",
             "default_check": true,
-            "description": "自动完成政策审阅并领取周期奖励"
+            "description": "自动完成政策审阅并领取周期奖励",
+            "label": "📜 政策审阅",
+            "doc": "自动完成「📜 政策审阅」。"
         },
         {
             "name": "📋 领取日常奖励",
             "entry": "领取日常奖励开始",
             "default_check": true,
-            "description": "领取日常任务奖励"
+            "description": "领取日常任务奖励",
+            "label": "📋 领取日常奖励",
+            "doc": "自动完成「📋 领取日常奖励」。"
         },
         {
             "name": "🎫 领取补给奖励",
             "entry": "领取补给奖励开始",
             "default_check": true,
-            "description": "领取补给界面中的可领取奖励"
+            "description": "领取补给界面中的可领取奖励",
+            "label": "🎫 领取补给奖励",
+            "doc": "自动完成「🎫 领取补给奖励」。"
         }
     ],
-    
     "option": {
         "是否需要启动游戏": {
             "type": "select",
@@ -84,7 +98,9 @@
                     "description": "自动启动游戏",
                     "pipeline_override": {
                         "启动游戏开始": {
-                            "next": ["启动游戏"]
+                            "next": [
+                                "启动游戏"
+                            ]
                         }
                     }
                 },
@@ -94,13 +110,14 @@
                     "description": "不启动游戏，直接开始后续任务（适用于模拟器已启动游戏）",
                     "pipeline_override": {
                         "启动游戏开始": {
-                            "next": ["无需启动游戏"]
+                            "next": [
+                                "无需启动游戏"
+                            ]
                         }
                     }
                 }
             ]
         },
-
         "选择刷什么类型关卡": {
             "type": "select",
             "label": "选择刷什么类型关卡",
@@ -111,10 +128,14 @@
                     "name": "成长",
                     "label": "🌱 成长",
                     "description": "单元币/主战员/辅战员升级材料",
-                    "option": ["选择成长关卡"],
+                    "option": [
+                        "选择成长关卡"
+                    ],
                     "pipeline_override": {
                         "开始选择刷什么类型关卡": {
-                            "next": ["成长"]
+                            "next": [
+                                "成长"
+                            ]
                         }
                     }
                 },
@@ -122,10 +143,14 @@
                     "name": "主战员",
                     "label": "⚔️ 主战员",
                     "description": "主战员晋级材料",
-                    "option": ["选择主战员关卡"],
+                    "option": [
+                        "选择主战员关卡"
+                    ],
                     "pipeline_override": {
                         "开始选择刷什么类型关卡": {
-                            "next": ["主战员"]
+                            "next": [
+                                "主战员"
+                            ]
                         }
                     }
                 },
@@ -133,10 +158,14 @@
                     "name": "副战员",
                     "label": "🛡️ 副战员",
                     "description": "副战员晋级材料",
-                    "option": ["选择副战员关卡"],
+                    "option": [
+                        "选择副战员关卡"
+                    ],
                     "pipeline_override": {
                         "开始选择刷什么类型关卡": {
-                            "next": ["副战员"]
+                            "next": [
+                                "副战员"
+                            ]
                         }
                     }
                 },
@@ -144,10 +173,14 @@
                     "name": "潜能",
                     "label": "💎 潜能",
                     "description": "潜能材料",
-                    "option": ["选择潜能关卡"],
+                    "option": [
+                        "选择潜能关卡"
+                    ],
                     "pipeline_override": {
                         "开始选择刷什么类型关卡": {
-                            "next": ["潜能"]
+                            "next": [
+                                "潜能"
+                            ]
                         }
                     }
                 },
@@ -155,16 +188,19 @@
                     "name": "记忆碎片",
                     "label": "📿 记忆碎片",
                     "description": "记忆碎片材料",
-                    "option": ["选择记忆碎片关卡"],
+                    "option": [
+                        "选择记忆碎片关卡"
+                    ],
                     "pipeline_override": {
                         "开始选择刷什么类型关卡": {
-                            "next": ["记忆碎片"]
+                            "next": [
+                                "记忆碎片"
+                            ]
                         }
                     }
                 }
             ]
         },
-
         "选择成长关卡": {
             "type": "select",
             "label": "选择成长关卡",
@@ -177,7 +213,10 @@
                     "description": "刷取单元币",
                     "pipeline_override": {
                         "开始选择具体关卡-成长": {
-                            "next": ["选择单元币关卡-成长", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择单元币关卡-成长",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -187,7 +226,10 @@
                     "description": "刷取主战员升级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-成长": {
-                            "next": ["选择主战员升级材料关卡-成长", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择主战员升级材料关卡-成长",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -197,13 +239,15 @@
                     "description": "刷取辅战员升级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-成长": {
-                            "next": ["选择辅战员升级材料关卡-成长", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择辅战员升级材料关卡-成长",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 }
             ]
         },
-
         "选择主战员关卡": {
             "type": "select",
             "label": "选择主战员关卡",
@@ -216,7 +260,10 @@
                     "description": "刷取前锋晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-主战员": {
-                            "next": ["选择晋级材料-前锋", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-前锋",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -226,7 +273,10 @@
                     "description": "刷取守卫晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-主战员": {
-                            "next": ["选择晋级材料-守卫", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-守卫",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -236,7 +286,10 @@
                     "description": "刷取游侠晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-主战员": {
-                            "next": ["选择晋级材料-游侠", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-游侠",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -246,7 +299,10 @@
                     "description": "刷取猎人晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-主战员": {
-                            "next": ["选择晋级材料-猎人", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-猎人",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -256,7 +312,10 @@
                     "description": "刷取奥义师晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-主战员": {
-                            "next": ["选择晋级材料-奥义师", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-奥义师",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -266,13 +325,15 @@
                     "description": "刷取操控师晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-主战员": {
-                            "next": ["选择晋级材料-操控师", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-操控师",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 }
             ]
         },
-
         "选择副战员关卡": {
             "type": "select",
             "label": "选择副战员关卡",
@@ -285,7 +346,10 @@
                     "description": "刷取前锋晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-副战员": {
-                            "next": ["选择晋级材料-前锋", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-前锋",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -295,7 +359,10 @@
                     "description": "刷取守卫晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-副战员": {
-                            "next": ["选择晋级材料-守卫", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-守卫",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -305,7 +372,10 @@
                     "description": "刷取游侠晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-副战员": {
-                            "next": ["选择晋级材料-游侠", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-游侠",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -315,7 +385,10 @@
                     "description": "刷取猎人晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-副战员": {
-                            "next": ["选择晋级材料-猎人", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-猎人",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -325,7 +398,10 @@
                     "description": "刷取奥义师晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-副战员": {
-                            "next": ["选择晋级材料-奥义师", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-奥义师",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -335,13 +411,15 @@
                     "description": "刷取操控师晋级材料",
                     "pipeline_override": {
                         "开始选择具体关卡-副战员": {
-                            "next": ["选择晋级材料-操控师", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择晋级材料-操控师",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 }
             ]
         },
-
         "选择潜能关卡": {
             "type": "select",
             "label": "选择潜能关卡",
@@ -354,7 +432,10 @@
                     "description": "刷取热情潜能材料",
                     "pipeline_override": {
                         "开始选择具体关卡-潜能": {
-                            "next": ["选择潜能材料-热情", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择潜能材料-热情",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -364,7 +445,10 @@
                     "description": "刷取秩序潜能材料",
                     "pipeline_override": {
                         "开始选择具体关卡-潜能": {
-                            "next": ["选择潜能材料-秩序", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择潜能材料-秩序",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -374,7 +458,10 @@
                     "description": "刷取本能潜能材料",
                     "pipeline_override": {
                         "开始选择具体关卡-潜能": {
-                            "next": ["选择潜能材料-本能", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择潜能材料-本能",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -384,7 +471,10 @@
                     "description": "刷取虚无潜能材料",
                     "pipeline_override": {
                         "开始选择具体关卡-潜能": {
-                            "next": ["选择潜能材料-虚无", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择潜能材料-虚无",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -394,13 +484,15 @@
                     "description": "刷取正义潜能材料",
                     "pipeline_override": {
                         "开始选择具体关卡-潜能": {
-                            "next": ["选择潜能材料-正义", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择潜能材料-正义",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 }
             ]
         },
-
         "选择记忆碎片关卡": {
             "type": "select",
             "label": "选择记忆碎片关卡",
@@ -413,7 +505,10 @@
                     "description": "刷取进化与荆棘记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-进化与荆棘", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-进化与荆棘",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -423,7 +518,10 @@
                     "description": "刷取序曲与梦境记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-序曲与梦境", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-序曲与梦境",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -433,7 +531,10 @@
                     "description": "刷取欲望与主宰记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-欲望与主宰", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-欲望与主宰",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -443,7 +544,10 @@
                     "description": "刷取焰与宝珠记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-焰与宝珠", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-焰与宝珠",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -453,7 +557,10 @@
                     "description": "刷取地位与行踪记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-地位与行踪", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-地位与行踪",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -463,7 +570,10 @@
                     "description": "刷取光荣与权威记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-光荣与权威", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-光荣与权威",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -473,7 +583,10 @@
                     "description": "刷取循环与命运记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-循环与命运", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-循环与命运",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -483,7 +596,10 @@
                     "description": "刷取贪婪与执着记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-贪婪与执着", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-贪婪与执着",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -493,7 +609,10 @@
                     "description": "刷取金龟子与约定记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-金龟子与约定", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-金龟子与约定",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 },
@@ -503,7 +622,10 @@
                     "description": "刷取遗骸与工具记忆碎片",
                     "pipeline_override": {
                         "开始选择具体关卡-记忆碎片": {
-                            "next": ["选择记忆碎片-遗骸与工具", "[JumpBack]滑动关卡列表"]
+                            "next": [
+                                "选择记忆碎片-遗骸与工具",
+                                "[JumpBack]滑动关卡列表"
+                            ]
                         }
                     }
                 }
