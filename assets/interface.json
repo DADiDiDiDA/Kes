@@ -1,6 +1,7 @@
 {
     "interface_version": 2,
     "name": "Kes",
+    "label": "卡厄思梦境",
     "description": "卡厄思梦境自动化脚本 - 只可以完成每日任务",
     "contact": "",
     "license": "MIT",
