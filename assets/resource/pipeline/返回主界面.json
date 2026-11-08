@@ -3,17 +3,25 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1794105537476,
+            "lastSyncTime": 1794107929119,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "D:\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\返回主界面.json",
             "savedViewport": {
-                "x": -6,
-                "y": -586,
-                "zoom": 0.46
+                "x": -67,
+                "y": -689,
+                "zoom": 0.43
             },
             "filename": "返回主界面",
             "version": "v2.1.1"
+        }
+    },
+    "$__mpe_anchor_启动游戏一次_返回主界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2340,
+                "y": 2138
+            }
         }
     },
     "上次退出有未完成的挑战": {
@@ -36,8 +44,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1672,
-                "y": 1187
+                "x": 1693,
+                "y": 1141
             }
         }
     },
@@ -65,8 +73,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 1699,
-                "y": 1430
+                "x": 1717,
+                "y": 1402
             }
         }
     },
@@ -87,8 +95,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1529,
-                "y": -852
+                "x": 1469,
+                "y": -966
             }
         }
     },
@@ -109,16 +117,16 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1914,
-                "y": -814
+                "x": 1854,
+                "y": -964
             }
         }
     },
     "主界面菜单已打开": {
         "$__mpe_code": {
             "position": {
-                "x": 2414,
-                "y": -126
+                "x": 2403,
+                "y": 2
             }
         }
     },
@@ -158,8 +166,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2046,
-                "y": -116
+                "x": 2027,
+                "y": -54
             }
         }
     },
@@ -338,8 +346,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 248,
-                "y": 214
+                "x": 213,
+                "y": 316
             }
         }
     },
@@ -415,8 +423,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2129,
-                "y": -598
+                "x": 2164,
+                "y": -665
             }
         }
     },
@@ -482,8 +490,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 2031,
-                "y": 1203
+                "x": 2061,
+                "y": 1120
             }
         }
     },
@@ -531,8 +539,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1619,
-                "y": -616
+                "x": 1571,
+                "y": -669
             }
         }
     },
@@ -558,14 +566,6 @@
             "position": {
                 "x": 1662,
                 "y": -337
-            }
-        }
-    },
-    "$__mpe_anchor_启动游戏一次_返回主界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2340,
-                "y": 2138
             }
         }
     }
