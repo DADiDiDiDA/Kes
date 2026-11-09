@@ -205,7 +205,9 @@
                 "package": "com.tencent.czn"
             }
         },
-        "anchor": "启动游戏一次",
+        "anchor": {
+            "启动游戏一次": "启动游戏单引用"
+        },
         "post_delay": 2000,
         "next": [
             "返回主界面开始"
@@ -214,6 +216,56 @@
             "position": {
                 "x": 241,
                 "y": -58
+            }
+        }
+    },
+    "启动游戏单引用": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.tencent.czn"
+            }
+        },
+        "post_delay": 2000,
+        "next": [
+            "启动游戏单引用-限流",
+            "启动游戏单引用-清锚点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 491,
+                "y": 176
+            }
+        }
+    },
+    "启动游戏单引用-限流": {
+        "recognition": {
+            "type": "DirectHit"
+        },
+        "max_hit": 3,
+        "$__mpe_code": {
+            "position": {
+                "x": 741,
+                "y": 410
+            }
+        }
+    },
+    "启动游戏单引用-清锚点": {
+        "anchor": {
+            "启动游戏一次": "空节点"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 991,
+                "y": 644
+            }
+        }
+    },
+    "空节点": {
+        "$__mpe_code": {
+            "position": {
+                "x": 741,
+                "y": 644
             }
         }
     },
@@ -242,12 +294,21 @@
         },
         "post_delay": 2000,
         "next": [
-            "[Anchor]启动游戏一次"
+            "[Anchor]启动游戏一次",
+            "按Esc后空节点"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 1774,
                 "y": 1988
+            }
+        }
+    },
+    "按Esc后空节点": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2024,
+                "y": 2222
             }
         }
     },
