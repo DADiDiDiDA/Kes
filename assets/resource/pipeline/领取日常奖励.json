@@ -3,13 +3,17 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794441796273,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "D:\\Automate\\Git-Maawork\\Kes\\assets\\resource\\pipeline\\领取日常奖励.json",
             "savedViewport": {
-                "x": -7677,
-                "y": -1346,
+                "x": -7947,
+                "y": -1269,
                 "zoom": 0.76
             },
             "filename": "领取日常奖励",
-            "version": "v2.0.5"
+            "version": "v2.1.1"
         }
     },
     "$__mpe_external_返回主界面开始_领取日常奖励": {
@@ -31,7 +35,7 @@
                     52
                 ],
                 "expected": [
-                    "领取"
+                    "全部领"
                 ]
             }
         },
@@ -46,6 +50,64 @@
             "position": {
                 "x": 11355,
                 "y": 1836
+            }
+        }
+    },
+    "进入日常任务界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    10,
+                    27,
+                    108,
+                    451
+                ],
+                "template": [
+                    "日常任务图标1.png",
+                    "日常任务图标2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "next": [
+            "开始领取每日奖励",
+            "[JumpBack]进入日常任务界面-第二次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 11022,
+                "y": 1980
+            }
+        }
+    },
+    "进入日常任务界面-第二次": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    10,
+                    27,
+                    108,
+                    451
+                ],
+                "template": [
+                    "日常任务图标1.png",
+                    "日常任务图标2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 11303,
+                "y": 2183
             }
         }
     },
@@ -113,64 +175,6 @@
             "position": {
                 "x": 10367,
                 "y": 2085
-            }
-        }
-    },
-    "进入日常任务界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    10,
-                    27,
-                    108,
-                    451
-                ],
-                "template": [
-                    "日常任务图标1.png",
-                    "日常任务图标2.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "next": [
-            "开始领取每日奖励",
-            "[JumpBack]进入日常任务界面-第二次"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 11022,
-                "y": 1980
-            }
-        }
-    },
-    "进入日常任务界面-第二次": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "roi": [
-                    10,
-                    27,
-                    108,
-                    451
-                ],
-                "template": [
-                    "日常任务图标1.png",
-                    "日常任务图标2.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "post_delay": 2000,
-        "$__mpe_code": {
-            "position": {
-                "x": 11307,
-                "y": 2099
             }
         }
     }
