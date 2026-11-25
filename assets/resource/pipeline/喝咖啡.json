@@ -131,6 +131,7 @@
         }
     },
     "进入咖啡店界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -188,6 +189,7 @@
         }
     },
     "进入方舟界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

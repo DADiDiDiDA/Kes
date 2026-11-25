@@ -613,6 +613,7 @@
         }
     },
     "进入战斗挑战-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -669,6 +670,7 @@
         }
     },
     "进入模拟界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -725,6 +727,7 @@
         }
     },
     "选择主战员升级材料关卡-成长-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -781,6 +784,7 @@
         }
     },
     "选择单元币关卡-成长-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -837,6 +841,7 @@
         }
     },
     "选择晋级材料-前锋-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -893,6 +898,7 @@
         }
     },
     "选择晋级材料-奥义师-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -949,6 +955,7 @@
         }
     },
     "选择晋级材料-守卫-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1005,6 +1012,7 @@
         }
     },
     "选择晋级材料-操控师-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1061,6 +1069,7 @@
         }
     },
     "选择晋级材料-游侠-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1117,6 +1126,7 @@
         }
     },
     "选择晋级材料-猎人-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1173,6 +1183,7 @@
         }
     },
     "选择潜能材料-本能-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1229,6 +1240,7 @@
         }
     },
     "选择潜能材料-正义-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1285,6 +1297,7 @@
         }
     },
     "选择潜能材料-热情-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1341,6 +1354,7 @@
         }
     },
     "选择潜能材料-秩序-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1397,6 +1411,7 @@
         }
     },
     "选择潜能材料-虚无-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1453,6 +1468,7 @@
         }
     },
     "选择记忆碎片-光荣与权威-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1509,6 +1525,7 @@
         }
     },
     "选择记忆碎片-地位与行踪-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1565,6 +1582,7 @@
         }
     },
     "选择记忆碎片-序曲与梦境-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1621,6 +1639,7 @@
         }
     },
     "选择记忆碎片-循环与命运-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1677,6 +1696,7 @@
         }
     },
     "选择记忆碎片-欲望与主宰-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1733,6 +1753,7 @@
         }
     },
     "选择记忆碎片-焰与宝珠-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1789,6 +1810,7 @@
         }
     },
     "选择记忆碎片-贪婪与执着-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1845,6 +1867,7 @@
         }
     },
     "选择记忆碎片-进化与荆棘-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1901,6 +1924,7 @@
         }
     },
     "选择记忆碎片-遗骸与工具-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -1957,6 +1981,7 @@
         }
     },
     "选择记忆碎片-金龟子与约定-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -2013,6 +2038,7 @@
         }
     },
     "选择辅战员升级材料关卡-成长-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -2134,6 +2160,7 @@
         }
     },
     "关卡挑战开始-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -2160,6 +2187,7 @@
         }
     },
     "消耗体力为红色吗-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "ColorMatch",
             "param": {
@@ -2215,6 +2243,7 @@
         }
     },
     "体力不足-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

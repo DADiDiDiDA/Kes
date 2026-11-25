@@ -85,6 +85,7 @@
         }
     },
     "进入日常任务界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -142,6 +143,7 @@
         }
     },
     "进入日常界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {

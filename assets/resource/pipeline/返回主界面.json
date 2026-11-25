@@ -152,6 +152,7 @@
         }
     },
     "判断是否在主界面-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "And",
             "param": {
@@ -313,6 +314,7 @@
         }
     },
     "尝试按Esc处理-第二次": {
+        "max_hit": 25,
         "action": {
             "type": "ClickKey",
             "param": {

@@ -66,6 +66,7 @@
         }
     },
     "开始政策批阅-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -150,6 +151,7 @@
         }
     },
     "开始进入政策室-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -630,6 +632,7 @@
         }
     },
     "确认周期结束-领取周期奖励-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -656,6 +659,7 @@
         }
     },
     "开始进入政策室-周期结束-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -698,6 +702,7 @@
         }
     },
     "确认配置结束-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -727,6 +732,7 @@
         }
     },
     "自动配置角色-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -756,6 +762,7 @@
         }
     },
     "政策批阅结束-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "OCR",
             "param": {
@@ -781,6 +788,7 @@
         }
     },
     "返回上一级-政策批阅-第二次": {
+        "max_hit": 25,
         "recognition": {
             "type": "TemplateMatch",
             "param": {
